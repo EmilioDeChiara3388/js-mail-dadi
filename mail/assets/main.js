@@ -21,9 +21,12 @@ const mailList = [
     "jimbe.seaknight@mail.it"
 ];
 
-let insertMail = prompt("Inserisci la tua email:");
+let insertMail = prompt("Inserisci il tuo indirizzo email:");
 
-if (mailList.includes(insertMail)){
+if (!insertMail.includes("@")){
+    alert("Non hai inserito un indirizzo email...");
+}
+else if (mailList.includes(insertMail)){
     alert("Benvenuto " + insertMail + ", accesso autorizzato!");
 } else {
     alert("Utente non autorizzato, accesso negato!");
