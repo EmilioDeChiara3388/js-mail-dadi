@@ -9,14 +9,17 @@ Trovare il modo di confrontare la stringa inserita con gli elementi dell'array;
 Fare un if block, che stampi i messaggi a seconda della corrispondenza o meno del dato inserito, in caso con un alert */
 
 const mailList = [
-    "rufy.monkeyd@mail.it"
-    "zoro.roronoa@mail.it"
-    "sanji.vinsmoke@mail.it"
-    "nami.navigator@mail.it"
-    "nico.robin@mail.it"
-    "franky.cyborg@mail.it"
-    "chopper.doctor@mail.it"
-    "usopp.sniper@mail.it"
-    "brooke.skeleton@mail.it"
+    "rufy.monkeyd@mail.it",
+    "zoro.roronoa@mail.it",
+    "sanji.vinsmoke@mail.it",
+    "nami.navigator@mail.it",
+    "nico.robin@mail.it",
+    "franky.cyborg@mail.it",
+    "chopper.doctor@mail.it",
+    "usopp.sniper@mail.it",
+    "brooke.skeleton@mail.it",
     "jimbe.seaknight@mail.it"
 ];
+
+let insertMail = prompt("Inserisci la tua email:");
+console.log(insertMail);
