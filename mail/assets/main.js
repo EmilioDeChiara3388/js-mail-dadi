@@ -24,10 +24,16 @@ const mailList = [
 let insertMail = prompt("Inserisci il tuo indirizzo email:");
 
 if (!insertMail.includes("@")){
+    console.log(insertMail);
+    console.log("Non hai inserito un indirizzo email...");
     alert("Non hai inserito un indirizzo email...");
 }
 else if (mailList.includes(insertMail)){
+    console.log(insertMail);
+    console.log("Benvenuto " + insertMail + ", accesso autorizzato!");
     alert("Benvenuto " + insertMail + ", accesso autorizzato!");
 } else {
+    console.log(insertMail);
+    console.log("Utente non autorizzato, accesso negato!");
     alert("Utente non autorizzato, accesso negato!");
 }
