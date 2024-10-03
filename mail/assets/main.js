@@ -1,4 +1,4 @@
-console.log("Funzioni?");
+//console.log("Funzioni?");
 
 //Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
 
@@ -22,4 +22,9 @@ const mailList = [
 ];
 
 let insertMail = prompt("Inserisci la tua email:");
-console.log(insertMail);
+
+if (mailList.includes(insertMail)){
+    alert("Benvenuto " + insertMail + ", accesso autorizzato!");
+} else {
+    alert("Utente non autorizzato, accesso negato!");
+}
