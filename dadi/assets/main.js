@@ -8,14 +8,19 @@ Dare come vincitore il giocatore (utente o pc) che ha ottenuto il numero più gr
 let playerNumber = Math.floor(Math.random() * 6) + 1;
 let botNumber = Math.floor(Math.random() * 6) + 1;
 console.log(playerNumber);
+alert("L'utente ha estratto " + playerNumber);
 console.log(botNumber);
+alert("Il pc ha estratto " + botNumber);
 
 if (playerNumber > botNumber){
-    console.log("L'utente vince!");   
+    console.log("L'utente vince!");
+    alert("L'utente vince!");
 } else if (playerNumber < botNumber){
     console.log("Il pc vince!");
+    alert("Il pc vince!");
 } else{
     console.log("Pareggio!");
+    alert("Pareggio!");
 }
 
 
